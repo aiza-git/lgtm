@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
+import os
 
 # 画像全体に対するメッセージ描画可能エリアの比率
 MAX_RATIO = 0.8
@@ -8,7 +9,12 @@ FONT_MAX_SIZE = 256
 FONT_MIN_SIZE = 24
 
 # WindowsやLinuxではパスが異なる
-FONT_NAME = 'arialbd.ttf'
+if os.name == 'nt':
+    print("Windows")
+    FONT_NAME = 'arialbd.ttf'
+else:
+    print("Mac or Linux")
+    FONT_NAME = '/usr/share/fonts/truetype/samyak-fonts/Samyak-Malayalam.ttf'
 # FONT_NAME = '/Library/Fonts/Arial Bold.ttf'
 FONT_COLOR_WHITE = (255, 255, 255, 0)
 
