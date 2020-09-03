@@ -7,5 +7,5 @@ def cli() :
     click.echo('lgtm') # 動作確認用
 
 def lgtm() :
-    # ここにロジック追加
+    # ここにロジックを追加
     pass
