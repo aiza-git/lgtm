@@ -14,8 +14,8 @@ if os.name == 'nt':
     FONT_NAME = 'arialbd.ttf'
 else:
     print("Mac or Linux")
-    # FONT_NAME = '/usr/share/fonts/truetype/samyak-fonts/Samyak-Malayalam.ttf'
-    FONT_NAME = '/Library/Fonts/Arial Bold.ttf'
+    FONT_NAME = '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf'
+    # FONT_NAME = '/Library/Fonts/Arial Bold.ttf'
 FONT_COLOR_WHITE = (255, 255, 255, 0)
 
 # アウトプット関連の定数

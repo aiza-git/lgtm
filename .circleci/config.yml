@@ -9,6 +9,7 @@ jobs:
          key: deps-{{ checksum "requirements.lock" }}
      - run:
          command: |
+           sudo apt install -y fonts-ipafont
            pip install --user -r requirements.lock
      - save_cache:
          key: deps-{{ checksum "requirements.lock" }}
