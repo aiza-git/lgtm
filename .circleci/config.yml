@@ -2,7 +2,7 @@ version: 2
 jobs:
  setup_dependencies:
    docker:
-     - image: circleci/ubuntu
+     - image: circleci/python:3.8.1
    steps:
      - checkout
      - restore_cache:
